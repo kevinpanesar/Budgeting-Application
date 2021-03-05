@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting Tool</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="stylesheet.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <p>Monthly Budget Calculator</p>
+    </header>
+    <main>
+      <div class="container">
+          <div class="containerHeader">
+            <p>Budgeting App</p>
+          </div>
+      <div class="budgetingWrapper">
+          <div class="containerBody">
+              <div class="textBoxWrapper">
+                <div class="budget">
+                  <form>
+                    <label>Enter Your Monthly Budget</label>
+                    <br>
+                    <input type="text" name="monthlyBudget" id="monthlyBudget">
+                    <br>
+                    <button type="button" id="monthlyBudgetButton" >Calculate</button>
+                    <button type="button" id="resetButton" >Reset</button>
+                  </form>
+                </div>
+                <div class="expenses">
+                  <form>
+                    <label>Enter Your Expense</label>
+                    <br>
+                    <input type="text" name="expenseItem" id="expense">
+                    <br>
+                    <label>Enter Your Expense Amount</label>
+                    <br>
+                    <input type="text" name="expenseAmount" id="amount">
+                    <br>
+                  <button type="button" id="expenseButton">Add Expense</button>
+                </form>
+              </div>
+              <div class="expenses">
+              <p id="totalExpenseAmount">Number of Expenses: <span>0</span> </p>
+            </div>
+            </div>
+          </div>
+            <div class="overviewWrapper">
+              <div class="overview">
+                <div class="overviewWrapper2">
+                  <div>
+                    <h1>Budget</h1>
+                    <img src="Media/MoneySign.png"/>
+                    <h1 id="budgetValue">$0</h1>
+                  </div>
+                  <div>
+                    <h1>Expenses Total</h1>
+                    <img src="Media/expenses.png" />
+                    <h1 id="Expenses">$0</h1>
+                  </div>
+                  <div>
+                    <h1>Remaining Balance</h1>
+                    <img src="Media/wallet.png" />
+                    <h1 id="balance">$0</h1>
+                  </div>
+                  
+                </div>
+                <div class="results">
+                  <table id="table">
+                    <tr id="tableHeader">
+                      <th>Expense Title</th>
+                      <th>Expense Value</th>
+                      <th>Delete</th>
+                    </tr>
+                    
+                  </table>
+                </div>     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    
+</body>
+</html>

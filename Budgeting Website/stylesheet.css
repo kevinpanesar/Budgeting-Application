@@ -1,0 +1,524 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-color: #202020;     
+  }
+
+header p {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 45px;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 850px;
+    width: 90%;
+    background-color: gainsboro;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #585858;
+    flex-direction: column;
+}
+
+#budgetValue{
+    color: rgb(0, 139, 7);
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.containerHeader {
+    background-color: #585858;
+}
+
+.containerHeader p {
+    margin-left: 25px;
+    margin-top:15px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+
+.textBoxWrapper {
+
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.containerBody {
+
+    width: 40%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.budgetingWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.budget {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expenses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.expenses p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.overviewWrapper {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overviewWrapper2 div img {
+    width: 55%;
+}
+
+.overview {
+
+    width: 94%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+form label {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+form button {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 3%;
+}
+
+input {
+    width: 90%;
+    line-height: 2em; 
+
+}
+
+form {
+    background-color: #FFC815;
+    width: 80%;
+    padding: 5%;
+    border-radius: 30px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.overviewWrapper2 div {
+    width: 30%;
+    height: 400px;
+    background-color: #FFC815;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 30px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto Slab', serif;
+}
+
+.overviewWrapper2{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    
+  
+}
+
+.results {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: auto;
+}
+
+.results table {
+    margin-top: 2%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    font-size: 23px;
+    padding-top: 10px;
+    border: black solid 2px;
+    border-style: outset;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 33%;
+}
+
+td {
+    background-color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 97%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    
+   
+
+}
+
+td button {
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#resetButton {
+    margin-left: 5px;
+}
+
+
+th {
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+    background-color: #FFC815;
+    font-family: 'Roboto Slab', serif;
+    border-top: black 3px;
+    border-bottom: black 3px;
+
+
+    
+}
+
+@media only screen and (min-width: 1098px)and (max-width: 1400px) {
+
+    .overviewWrapper2 div {
+        height: 300px;
+    }
+
+    .overviewWrapper2 div h1 {
+        font-size: 25px;
+    }
+
+    .overview {
+        height: 550px;
+    }
+
+    .overviewWrapper{
+        align-items: flex-start;
+    }
+
+    .container {
+        height: 700px;
+    }
+    
+    td button {
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    td, th {
+        font-size: 18px;
+    }
+
+    .textBoxWrapper {
+
+        margin-top: 14px;
+    }
+    .expenses {
+        margin-top: 50px;
+    }
+
+    .container {
+        height: 650px;
+    }
+
+    .results {
+        height: 40%;
+    }
+}
+
+@media only screen and (min-width: 837px)and (max-width: 1098px)  {
+    .overviewWrapper2 div h1 {
+        font-size: 20px;
+    }
+
+    .overviewWrapper2 div {
+        height: 200px;
+    }
+
+    .overview {
+        height: 800px;
+        justify-content: flex-start
+    }
+
+    .textBoxWrapper {
+        margin-top: 17px;
+    }
+
+    .textBoxWrapper {
+
+        align-items: center;
+    }
+
+    .expenses {
+        margin-top: 50px;
+    }
+
+    #totalExpenseAmount{
+        margin-left: 20px;
+    }
+
+    .overviewWrapper {
+        align-items: flex-start;
+    }
+
+    .results {
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .container {
+        height: 700px;
+    }
+
+    tr, th,td {
+        font-size: 16px;
+    }
+
+    td button {
+        font-size: 16px;
+    }
+
+    .containerHeader p {
+        margin-top: 45px;
+    }
+
+
+}
+
+@media only screen and (min-width: 456px)and (max-width: 836px) {
+
+
+    header p {
+        font-size: 200%;
+    }
+
+    .container {
+        height: 1000px;
+        margin-bottom: 40px;
+    }
+
+    .containerHeader {
+        text-align: center;
+    }
+
+    .overview {
+        flex-direction: column-reverse;
+        height: 500px;
+    }
+
+    .overviewWrapper {
+        width: 90%;
+        height: 600px;
+    }
+
+    .overviewWrapper2 div{
+        height: 180px;
+    }
+
+    .overviewWrapper2 div h1{
+        font-size: 100%;
+        
+    }
+
+    .containerBody {
+        flex-direction: row;
+        width: 100%;
+        height: 350px;
+    }
+
+    .textBoxWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .textBoxWrapper div {
+        margin-top: 0px;
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    #totalExpenseAmount {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    
+    .results {
+        margin-bottom: 30px;
+    }
+
+    .budgetingWrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    form {
+        width: 100%;
+        height: 150px;
+    }
+
+    form label {
+        font-size: 95%;
+    }
+
+    form input {
+        height: 15%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 456px){
+
+
+    header p {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    .container {
+        height: 1100px;
+        margin-bottom: 40px;
+    }
+
+    .containerHeader {
+        text-align: center;
+    }
+
+    .overview {
+        flex-direction: column-reverse;
+        height: 400px;
+        width: 100%;
+    }
+
+    .overviewWrapper {
+        width: 90%;
+        height: 500px;
+    }
+
+    .overviewWrapper2 div{
+        height: 150px;
+        width: 30%;
+    }
+
+    .overviewWrapper2 {
+        width: 100%;
+    }
+
+    .overviewWrapper2 div h1{
+        font-size: 80%;
+        padding: 10px;
+    }
+
+    .containerBody {
+  
+        width: 100%;
+        height: 350px;
+    }
+
+    .textBoxWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .textBoxWrapper div {
+        margin-top: 0px;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    #totalExpenseAmount {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    
+    .results {
+        margin-bottom: 30px;
+
+    }
+
+    .budgetingWrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1050px;
+    }
+
+    form {
+        width: 100%;
+        height: 150px;
+    }
+
+    form label {
+        font-size: 95%;
+    }
+
+    form input {
+        height: 15%;
+    }
+
+    th, td, td button {
+        font-size: 18px;
+    }
+}
